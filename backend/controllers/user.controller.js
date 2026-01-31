@@ -56,6 +56,8 @@ export const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
+    console.log("Signup API hit", req.body);
+
     // 1. Check for missing fields
     if (!email || !password) {
       return res
